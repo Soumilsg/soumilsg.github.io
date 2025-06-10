@@ -7,7 +7,7 @@ excerpt: 'Developed programmable controller for exploiting instruction-level par
 date: 2025-05-14
 venue: 'IDEALS at UIUC'
 # slidesurl: 'http://academicpages.github.io/files/slides2.pdf'
-paperurl: 'http://academicpages.github.io/files/THESIS.pdf'
+paperurl: 'http://soumilsg.github.io/files/THESIS.pdf'
 citation: 'TBD'
 ---
 Developed programmable controller for exploiting instruction-level parallelism at the hardware level for undergraduate thesis. Controller developed as part of larger project in collaboration with the [Future Architecture and System Technology for Scalable Computing Lab (FAST) at UIUC](https://fast.ece.illinois.edu/) and the [Samsung Advanced Institute of Technology (SAIT)](https://www.sait.samsung.co.kr/saithome/main/main.do). 

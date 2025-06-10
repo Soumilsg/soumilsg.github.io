@@ -67,30 +67,36 @@
     margin: 0;
     padding: 0;
     list-style-type: none;
+
+    /* NEW → keep items on one line, wrap if needed, add equal gap */
+    display: flex;
+    flex-wrap: wrap;            /* let icons wrap on narrow screens */
+    column-gap: 1.25rem;        /* horizontal spacing */
+    row-gap:    0.5rem;         /* vertical spacing when wrapped */
+    align-items: center;        /* align icons & text nicely */
   }
 
   li {
-    display: inline-block;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    /* no inline “before” separator anymore */
+    display: inline-flex;
+    align-items: center;
     font-family: $sans-serif-narrow;
     font-size: $type-size-6;
     text-transform: uppercase;
   }
 
-  li + li:before {
-    content: "";
-    padding-right: 5px;
-  }
+  /* remove the old pseudo-separator rule */
+  // li + li:before {
+  //   content: "";
+  //   padding-right: 5px;
+  // }
 
   a {
-    padding-right: 10px;
     font-weight: bold;
   }
 
-  .social-icons {
-    a {
-      white-space: nowrap;
-    }
+  .social-icons a {
+    white-space: nowrap;
   }
 }
+
