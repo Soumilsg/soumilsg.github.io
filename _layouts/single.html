@@ -26,21 +26,54 @@ layout: default
     <div class="page__inner-wrap">
       {% unless page.header.overlay_color or page.header.overlay_image %}
         <header>
-          {% if page.title %}<h1 class="page__title" itemprop="headline">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>{% endif %}
-          {% if page.read_time %}
-            <p class="page__meta"><i class="fa fa-clock" aria-hidden="true"></i> {% include read-time.html %}</p>
+          {% if page.title %}
+            <h1 class="page__title" itemprop="headline">
+              {{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}
+            </h1>
           {% endif %}
-        {% if page.modified %}
-          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ page.modified | date: "%Y-%m-%d" }}">{{ page.modified | date: "%B %d, %Y" }}</time></p>
-        {% endif %}
-        
-        {% if page.collection == 'teaching' %}
-          <p> {{ page.type }}, <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
-        {% elsif page.venue and page.date %}
-          <p>Published in <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
-        {% elsif page.date %}
-          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
-        {% endif %}    
+
+          {%- comment -%}
+            • work_experience → show location + year-range, no “Published:” line  
+            • portfolio       → show nothing extra, no “Published:” line  
+            • everything else → keep original “Modified / Published” logic
+          {%- endcomment -%}
+
+          {% if page.collection == 'work_experience' %}
+              {%- assign start_year = page.start | default: page.date | date: "%Y" -%}
+              {%- assign end_year   = page.end   | date: "%Y" -%}
+              <p class="page__meta">
+                {% if page.location %}<em>{{ page.location }}</em>{% endif %}
+                {% if start_year %}
+                  {% if page.location %}, {% endif %}
+                  {% if end_year and end_year != start_year %}
+                    {{ start_year }}&ndash;{{ end_year }}
+                  {% else %}
+                    {{ start_year }}
+                  {% endif %}
+                {% endif %}
+              </p>
+
+          {% elsif page.collection == 'portfolio' %}
+
+          {% elsif page.modified %}
+              <p class="page__date">
+                <strong><i class="fa fa-fw fa-calendar"></i>
+                  {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}
+                </strong>
+                <time datetime="{{ page.modified | date: "%Y-%m-%d" }}">{{ page.modified | date: "%B %d, %Y" }}</time>
+              </p>
+
+          {% elsif page.venue and page.date %}
+              <p>Published in <i>{{ page.venue }}</i>, {{ page.date | date: "%Y" }}</p>
+
+          {% elsif page.date %}
+              <p class="page__date">
+                <strong><i class="fa fa-fw fa-calendar"></i>
+                  {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}
+                </strong>
+                <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>
+              </p>
+          {% endif %}
         </header>
       {% endunless %}
 
@@ -71,9 +104,15 @@ layout: default
           <p style="font-size: smaller"><a href="{{ page.slidesurl }}">Download Slides</a></p>
         {% elsif page.bibtexurl %}
           <p style="font-size: smaller"><a href="{{ page.bibtexurl }}">Download Bibtex</a></p>
+        {% elsif page.paperurl %}
+          <p style="font-size: smaller">
+            <a href="{{ page.paperurl }}">Download Paper</a>
+          </p>
         {% endif %}
 
-        {% if page.link %}<div><a href="{{ page.link }}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
+        {% if page.link %}
+          <div><a href="{{ page.link }}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>
+        {% endif %}
       </section>
 
       <footer class="page__meta">
@@ -93,7 +132,6 @@ layout: default
     {% endif %}
   </article>
 
-  {% comment %}<!-- only show related on a post page when not disabled -->{% endcomment %}
   {% if page.id and page.related and site.related_posts.size > 0 %}
     <div class="page__related">
       {% if site.data.ui-text[site.locale].related_label %}
