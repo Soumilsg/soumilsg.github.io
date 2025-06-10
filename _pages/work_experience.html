@@ -1,0 +1,63 @@
+---
+layout: archive
+title:  "Work Experience"
+permalink: /work_experience/
+author_profile: true
+---
+
+{% include base_path %}
+
+{%- comment -%}
+  Fixed display order for the four categories.
+{%- endcomment -%}
+{% assign order = "full-time|intern|research|university" | split:"|" %}
+
+{% for type in order %}
+  {%- assign posts = site.work_experience
+                     | where:"experience_type", type
+                     | sort:"start"
+                     | reverse -%}
+
+  {% if posts != empty %}
+
+    {%- case type -%}
+      {%- when "full-time"  -%}{% assign section_title = "Full-Time Experience"  -%}
+      {%- when "intern"     -%}{% assign section_title = "Intern Experience"     -%}
+      {%- when "research"   -%}{% assign section_title = "Research Experience"   -%}
+      {%- when "university" -%}{% assign section_title = "University Experience" -%}
+    {%- endcase -%}
+
+    <h2>{{ section_title }}</h2><hr />
+
+    {% for post in posts %}
+    <article class="work-item">
+      <h2 class="archive__item-title">
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      </h2>
+
+      {%- assign yr_start = post.start | date: "%Y" -%}
+      {%- assign yr_end   = post.end   | date: "%Y" -%}
+
+      <p class="work-meta">
+        {%- if post.location -%}<em>{{ post.location | strip }}</em>{%- endif -%}
+        {%- if yr_start -%}
+          {%- if post.location -%}, {% endif -%}
+          {{ yr_start }}{%- if yr_end and yr_end != yr_start -%}&ndash;{{ yr_end }}{%- endif -%}
+        {%- endif -%}
+      </p>
+
+      <div class="work-body">{{ post.excerpt | markdownify }}</div>
+
+      {%- if post.website and post.paperurl -%}
+        <p><a href="{{ post.website }}">See Website</a> | <a href="{{ post.paperurl }}">Download Paper</a></p>
+      {%- elsif post.website -%}
+        <p><a href="{{ post.website }}">See Website</a></p>
+      {%- elsif post.paperurl -%}
+        <p><a href="{{ post.paperurl }}">Download Paper</a></p>
+      {%- endif -%}
+
+      <hr />
+    </article>
+    {% endfor %}
+  {% endif %}
+{% endfor %}
