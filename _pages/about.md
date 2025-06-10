@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a recent graduate from the University of Illinois, Urbana-Champaign where I completed my B.S. in Computer Engineering. My expertise spans the complete computing stack, from ASIC design and RTL verification to systems software and machine learning acceleration. I am currently seeking full-time or co-op opportunities in systems software engineering or RTL design/verification.
+I am a recent graduate from the University of Illinois, Urbana-Champaign where I completed my B.S. in Computer Engineering. My expertise spans the complete computing stack, from ASIC design and RTL verification to systems software to machine learning acceleration. I am currently seeking full-time or co-op opportunities in systems software engineering or RTL design/verification.
 
 My research interests lie in hardware-software co-design for energy-efficient computing systems, focusing on microarchitecture design, memory hierarchy optimization, and accelerator integration. I am particularly invested in developing architectures that exploit massive parallelism while addressing memory wall constraints and energy bottlenecks that limit deployment of advanced computing in resource-constrained environments. My goal is to democratize access to AI/ML, autonomous systems, and edge computing technologies through transformative architectural innovations.
 
