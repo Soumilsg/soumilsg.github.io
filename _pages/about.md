@@ -11,7 +11,7 @@ I am a recent graduate from the University of Illinois, Urbana-Champaign where I
 
 My research interests lie in hardware-software co-design for energy-efficient computing systems, focusing on microarchitecture design, memory hierarchy optimization, and accelerator integration. I am particularly invested in developing architectures that exploit massive parallelism while addressing memory wall constraints and energy bottlenecks that limit deployment of advanced computing in resource-constrained environments. My goal is to democratize access to AI/ML, autonomous systems, and edge computing technologies through transformative architectural innovations.
 
-My technical foundation includes significant project experience across the computing spectrum: designing a parameterizable out-of-order RISC-V processor achieving 0.51 IPC, implementing a complete CPU design with custom standard cell library in 45nm technology, developing an FPGA-accelerated deep learning system, and building a Unix-like operating system from scratch. This work has been complemented by research collaborations with Samsung on a dynamic binary translation controller, and the U.S. Army Corps of Engineers on adaptive localization algorithms. Before graduating, I gained valuable industry and academic experience as a researcher in multiple UIUC labs contributing to publications on adaptive filtering and computer architecture, and as an undergraduate teaching assistant mentoring students in C/C++ programming fundamentals.
+My technical foundation includes significant project experience across the computing spectrum: designing a parameterizable out-of-order RISC-V processor achieving 0.51 IPC, implementing a complete CPU design with custom standard cell library in 45nm technology, developing an FPGA-accelerated deep learning system, and building a Unix-like operating system from scratch. This work has been complemented by research collaborations with Samsung on a CGRA controller that generates spatial dataflow graphs, and the U.S. Army Corps of Engineers on adaptive localization algorithms, and UIUC's ECE department as an undergraduate teaching assistant mentoring students in C/C++ programming fundamentals.
 
 
 **I am currently looking for full-time or internship roles in the field of systems software or RTL design/verification. If you have any opportunities, please feel free to reach out!**
@@ -28,15 +28,15 @@ Education
 ## Technical Skills
 
 <h3 style="margin-bottom: 5px; margin-top: 10px;">Languages</h3>
-<div style="display: flex; flex-wrap: wrap; gap: 60px; margin-bottom: 5px;">
-<div style="flex: 1; min-width: 200px;">
+<div style="display: flex; flex-wrap: wrap; gap: 20px; margin-bottom: 5px;">
+<div style="flex: 1; min-width: 150px;">
 <ul style="margin: 0; padding-left: 20px;">
 <li>C</li>
 <li>C++</li>
 <li>Python</li>
 </ul>
 </div>
-<div style="flex: 1; min-width: 200px;">
+<div style="flex: 1; min-width: 150px;">
 <ul style="margin: 0; padding-left: 20px;">
 <li>Java</li>
 <li>x86 Assembly</li>
@@ -45,8 +45,8 @@ Education
 </div>
 
 <h3 style="margin-bottom: 5px; margin-top: 15px;">Frameworks & Specialized Languages</h3>
-<div style="display: flex; flex-wrap: wrap; gap: 60px; margin-bottom: 5px;">
-<div style="flex: 1; min-width: 200px;">
+<div style="display: flex; flex-wrap: wrap; gap: 20px; margin-bottom: 5px;">
+<div style="flex: 1; min-width: 150px;">
 <ul style="margin: 0; padding-left: 20px;">
 <li>CUDA</li>
 <li>SystemVerilog</li>
@@ -131,8 +131,8 @@ Education
 </div>
 
 <h3 style="margin-bottom: 5px; margin-top: 15px;">Other</h3>
-<div style="display: flex; flex-wrap: wrap; gap: 60px; margin-bottom: 0;">
-<div style="flex: 1; min-width: 200px;">
+<div style="display: flex; flex-wrap: wrap; gap: 20px; margin-bottom: 0;">
+<div style="flex: 1; min-width: 150px;">
 <ul style="margin: 0; padding-left: 20px;">
 <li>Rviz</li>
 <li>Gazebo</li>
