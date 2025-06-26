@@ -160,11 +160,13 @@ og_image                 :  # Open Graph/Twitter default site image
 # - https://developers.google.com/structured-data/customize/social-profiles
 
 
-# Analytics
+# ────────────────────────────────────────────────
+# Analytics (Minimal Mistakes/AcademicPages style)
 analytics:
-  provider               :  "false" # false (default), "google", "google-universal", "google-analytics-4", "custom"
+  provider: "google-analytics-4"     # enable GA4
   google:
-    tracking_id          :
+    tracking_id: "G-9ZYQ5S1GK2"      # ← your Measurement ID here
+# ────────────────────────────────────────────────
 
 
 # Reading Files
