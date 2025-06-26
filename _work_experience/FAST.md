@@ -11,7 +11,7 @@ website: https://fast.ece.illinois.edu/
 paperurl: 'http://soumilsg.github.io/publication/MESA'
 ---
 
-Worked on joint projects with a computer architecture research lab under Professor Nam Sung Kim and the Samsung Advanced Institute of Technology group. Research topics included Coarse-Grained Reconfigurable Array (CGRA) Accelerators, Dynamic Binary Translation, Spatial Dataflow Graphs, Heterogeneous SoC Integration, and RTL Design & Verification.
+Worked on joint projects with a computer architecture research lab under Professor Nam Sung Kim and the **Samsung** Advanced Institute of Technology group. Research topics included Coarse-Grained Reconfigurable Array (CGRA) Accelerators, Dynamic Binary Translation, Spatial Dataflow Graphs, Heterogeneous SoC Integration, and RTL Design & Verification.
 
 <!--more-->
 
@@ -20,4 +20,4 @@ Worked on joint projects with a computer architecture research lab under Profess
 - Built custom hardware verification framework complete with golden model to compare DUT v. gold execution traces.
 - Verified HDL modules for multiple IPs including modules on AXI protocol integration and Register Files.
 - Deployed and validated HDL code through ModelSim, Verilator simulation, and Vivado software.
-- Participated in weekly scrums with Samsung SAIT group, developing strong teamwork and communication skills.
+- Participated in weekly scrums with **Samsung** SAIT group, developing strong teamwork and communication skills.
