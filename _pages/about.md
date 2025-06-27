@@ -65,7 +65,7 @@ Education
 </div>
 
 <h3 style="margin-bottom: 5px; margin-top: 15px;">Libraries</h3>
-<div style="display: flex; flex-wrap: wrap; gap: 60px; margin-bottom: 5px;">
+<div style="display: flex; flex-wrap: wrap; gap: 20px; margin-bottom: 5px;">
 <div style="flex: 1; min-width: 200px;">
 <ul style="margin: 0; padding-left: 20px;">
 <li>TensorFlow</li>
@@ -85,7 +85,7 @@ Education
 </div>
 
 <h3 style="margin-bottom: 5px; margin-top: 15px;">Development Tools</h3>
-<div style="display: flex; flex-wrap: wrap; gap: 60px; margin-bottom: 5px;">
+<div style="display: flex; flex-wrap: wrap; gap: 20px; margin-bottom: 5px;">
 <div style="flex: 1; min-width: 200px;">
 <ul style="margin: 0; padding-left: 20px;">
 <li>Git/GitHub</li>
@@ -108,7 +108,7 @@ Education
 </div>
 
 <h3 style="margin-bottom: 5px; margin-top: 15px;">Hardware Tools</h3>
-<div style="display: flex; flex-wrap: wrap; gap: 60px; margin-bottom: 5px;">
+<div style="display: flex; flex-wrap: wrap; gap: 20px; margin-bottom: 5px;">
 <div style="flex: 1; min-width: 200px;">
 <ul style="margin: 0; padding-left: 20px;">
 <li>Intel Quartus</li>
