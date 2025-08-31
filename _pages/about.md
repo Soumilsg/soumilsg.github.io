@@ -21,8 +21,8 @@ My technical foundation includes significant project experience across the compu
 
 Education
 ======
-* M.S. in Electrical & Computer Engineering, Carnegie Mellon University, Planned 2027
-* B.S. in Computer Engineering, University of Illinois, Urbana-Champaign, 2025
+* M.S. in Electrical & Computer Engineering, Carnegie Mellon University, Expected 2026-2027
+* B.S. in Computer Engineering, University of Illinois, Urbana-Champaign, 2021-2025
 
 <br>
 
