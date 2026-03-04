@@ -13,7 +13,7 @@ My research interests lie in hardware-software co-design for energy-efficient co
 
 My technical foundation towards this goal includes significant project experience across the computing spectrum: designing a parameterizable out-of-order RISC-V processor achieving 0.51 IPC, implementing a complete RISC-V CPU design with custom standard cell library in 45nm technology, developing an FPGA-accelerated deep learning system, and building a Unix-like operating system from scratch. This work has been complemented by research collaborations with Samsung on a CGRA controller that generates spatial dataflow graphs, and the U.S. Army Corps of Engineers on adaptive localization algorithms, and UIUC's ECE department as an undergraduate teaching assistant mentoring students in C/C++ programming fundamentals. Most recently, I am a CPU Performance Architect Intern conducting performance modeling and microarchitecture exploration for mobile ARM processors at Samsung Research America. 
 
-**I am currently looking for internship/co-op roles in the fields of SoC or processor computer architecture design & performance modeling, RTL IP Design (Not Verification/DFT/Bringup), ASIC Design, or AI Kernel Acceleration/Systems Software. If you have any opportunities, please feel free to reach out!**
+**I am currently looking for internship/co-op roles in the fields of SoC or processor computer architecture design & performance modeling, RTL IP & ASIC Design (Not Verification/DFT/Bringup), or AI Kernel Acceleration/Systems Software. If you have any opportunities, please feel free to reach out!**
 
 
 <br><br>
