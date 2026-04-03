@@ -1,7 +1,7 @@
 ---
 title: "Bitsliced RV32I CPU in Cadence Virtuoso"
 date: 2025-05-14
-order: 1
+order: 2
 layout: single
 excerpt: >-
   Used Cadence Virtuoso and Cadence Innovus tools for VLSI design of a 32-bit
